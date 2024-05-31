@@ -11,13 +11,21 @@ config_version=5
 [application]
 
 config/name="Card-Game-Simulator-XR"
-run/main_scene="res://main.tscn"
+run/main_scene="res://tiltfive/main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+T5Interface="*res://addons/tiltfive/T5Interface.gd"
 
 [dotnet]
 
 project/assembly_name="Card-Game-Simulator-XR"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/tiltfive/plugin.cfg")
 
 [rendering]
 
@@ -28,3 +36,5 @@ renderer/rendering_method.mobile="gl_compatibility"
 
 openxr/enabled=true
 shaders/enabled=true
+tilt_five/application_id="cgsxr.finoldigital.com"
+tilt_five/default_display_name="Card Game Simulator XR"

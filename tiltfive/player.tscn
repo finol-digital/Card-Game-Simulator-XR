@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5etwegvi8dgs"]
+
+[ext_resource type="PackedScene" uid="uid://d2gkfypplc1mt" path="res://addons/tiltfive_tools/staging/player.tscn" id="1_gtkih"]
+[ext_resource type="PackedScene" uid="uid://b1cd3jc00rhal" path="res://addons/tiltfive/assets/T5GlassesModel.tscn" id="2_143rc"]
+[ext_resource type="PackedScene" uid="uid://bfxa4y4qa6l67" path="res://addons/tiltfive_tools/functions/pointer.tscn" id="3_yebmj"]
+[ext_resource type="PackedScene" uid="uid://fipea8dbocg4" path="res://addons/tiltfive/assets/T5WandModel.tscn" id="4_me7wp"]
+
+[node name="Player" instance=ExtResource("1_gtkih")]
+
+[node name="T5-glasses" parent="Origin/Camera" index="0" instance=ExtResource("2_143rc")]
+
+[node name="Pointer" parent="Origin/Wand_1" index="0" instance=ExtResource("3_yebmj")]
+
+[node name="T5-wand" parent="Origin/Wand_1" index="1" instance=ExtResource("4_me7wp")]

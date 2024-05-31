@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://nrr53pdnm0cw"]
+
+[ext_resource type="PackedScene" uid="uid://dslrsg4cn04o4" path="res://addons/tiltfive_tools/staging/scene.tscn" id="1_rpycu"]
+[ext_resource type="PackedScene" uid="uid://csxyutfko7rrw" path="res://tiltfive/character.tscn" id="2_c40j6"]
+
+[node name="Room" instance=ExtResource("1_rpycu")]
+character_scene = ExtResource("2_c40j6")

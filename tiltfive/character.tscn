@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://csxyutfko7rrw"]
+
+[ext_resource type="PackedScene" uid="uid://co3lxjgp5ifh2" path="res://addons/tiltfive_tools/staging/character.tscn" id="1_qcluh"]
+
+[node name="Character" instance=ExtResource("1_qcluh")]
